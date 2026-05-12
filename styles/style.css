@@ -1,7 +1,6 @@
 .page {
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 0 10px;
     background-attachment: fixed;
 }
 
@@ -112,8 +111,8 @@
 
 .header__description {
     margin-block-end: 45px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .title-decor {
@@ -136,8 +135,8 @@
 .section {
     display: grid;
     gap: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .section__title {
@@ -222,8 +221,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .gallery__title {
@@ -312,8 +311,8 @@
     min-block-size: 668px;
     block-size: 100vh;
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer__title {
@@ -333,16 +332,6 @@
 
     .header {
         padding-block: 20px;
-    }
-
-    .gallery {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .footer {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .decorated-zone::before {
@@ -392,8 +381,8 @@
 
     .section {
         grid-template-columns: 1fr 2fr;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .section--how {
@@ -423,6 +412,16 @@
         gap: 20px;
     }
 
+    .gallery {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .gallery__grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -445,7 +444,21 @@
     .page {
         max-width: 1024px;
         margin: 0 auto;
-        padding: 0 20px;
+    }
+
+    .section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .gallery {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .header__title {
