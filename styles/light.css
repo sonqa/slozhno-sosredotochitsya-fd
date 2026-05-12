@@ -1,0 +1,127 @@
+:root.theme-light {
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --text-color: #353430;
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --button-hover: rgba(255, 141, 203, 0.4);
+    --section-title-color: #353430;
+}
+
+:root.theme-light .header__rec {
+    display: none;
+}
+
+:root.theme-light .header__theme-menu-button {
+    color: #353430;
+}
+
+:root.theme-light .header__theme-menu-button_active {
+    border: 1px solid #353430;
+    color: #353430;
+}
+
+:root.theme-light .header__theme-menu-button:hover {
+    border: 1px solid rgba(53, 52, 48, 0.4);
+}
+
+:root.theme-light .section__title {
+    color: #353430;
+    font-weight: 700;
+}
+
+:root.theme-light .card__title {
+    color: #353430;
+    font-weight: 700;
+}
+
+:root.theme-light .card__text {
+    color: #353430;
+    font-weight: 400;
+}
+
+:root.theme-light .advice-item__title {
+    color: #353430;
+}
+
+:root.theme-light .advice-item__text {
+    color: #353430;
+    font-weight: 400;
+}
+
+:root.theme-light a {
+    text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+:root.theme-light a:hover {
+    border-bottom: 1px solid #353430;
+}
+
+:root.theme-light a:focus-visible {
+    outline: 1px solid #353430;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff1f7;
+        --bg-image: url(../images/cover-image-light.png);
+        --text-color: #353430;
+        --title-color: #ffc2e6;
+        --accent-color: #ff8dcb;
+        --button-hover: rgba(255, 141, 203, 0.4);
+        --section-title-color: #353430;
+    }
+    
+    .header__rec {
+        display: none;
+    }
+    
+    .header__theme-menu-button {
+        color: #353430;
+    }
+    
+    .header__theme-menu-button_active {
+        border: 1px solid #353430;
+        color: #353430;
+    }
+    
+    .header__theme-menu-button:hover {
+        border: 1px solid rgba(53, 52, 48, 0.4);
+    }
+    
+    .section__title {
+        color: #353430;
+        font-weight: 700;
+    }
+    
+    .card__title {
+        color: #353430;
+        font-weight: 700;
+    }
+    
+    .card__text {
+        color: #353430;
+        font-weight: 400;
+    }
+    
+    .advice-item__title {
+        color: #353430;
+    }
+    
+    .advice-item__text {
+        color: #353430;
+        font-weight: 400;
+    }
+    
+    a {
+        text-shadow: 2px 2px 0 var(--accent-color);
+    }
+    
+    a:hover {
+        border-bottom: 1px solid #353430;
+    }
+    
+    a:focus-visible {
+        outline: 1px solid #353430;
+    }
+}

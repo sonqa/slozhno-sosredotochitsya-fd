@@ -1,0 +1,29 @@
+:root.theme-dark {
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+    --text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --accent-color: #ff0070;
+    --button-hover: rgba(255, 0, 112, 0.4);
+    --section-title-color: #ff0070;
+}
+
+:root.theme-dark .header__rec {
+    display: block;
+}
+
+:root.theme-dark .card__title {
+    color: #000028;
+}
+
+:root.theme-dark .advice-item__title {
+    color: #000028;
+}
+
+:root.theme-dark .gallery__title {
+    color: #000028;
+}
+
+:root.theme-dark .title-decor {
+    color: #000028;
+}

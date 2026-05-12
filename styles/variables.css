@@ -1,0 +1,15 @@
+:root {
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+    --text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --accent-color: #ff0070;
+    --button-hover: rgba(255, 0, 112, 0.4);
+    --section-title-color: #ff0070;
+    --padding-mobile: 10px;
+    --padding-tablet: 20px;
+}
+
+.header__rec {
+    display: block;
+}
