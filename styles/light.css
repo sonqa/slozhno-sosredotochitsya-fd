@@ -27,17 +27,14 @@
 
 :root.theme-light .section__title {
     color: #353430;
-    font-weight: 700;
 }
 
 :root.theme-light .card__title {
     color: #353430;
-    font-weight: 700;
 }
 
 :root.theme-light .card__text {
     color: #353430;
-    font-weight: 400;
 }
 
 :root.theme-light .advice-item__title {
@@ -46,19 +43,19 @@
 
 :root.theme-light .advice-item__text {
     color: #353430;
-    font-weight: 400;
+}
+
+:root.theme-light .title-decor {
+    background-color: #ff8dcb;
+    color: #353430;
 }
 
 :root.theme-light a {
-    text-shadow: 2px 2px 0 var(--accent-color);
+    text-shadow: 2px 2px 0 #ff8dcb;
 }
 
 :root.theme-light a:hover {
     border-bottom: 1px solid #353430;
-}
-
-:root.theme-light a:focus-visible {
-    outline: 1px solid #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -85,23 +82,16 @@
         color: #353430;
     }
     
-    .header__theme-menu-button:hover {
-        border: 1px solid rgba(53, 52, 48, 0.4);
-    }
-    
     .section__title {
         color: #353430;
-        font-weight: 700;
     }
     
     .card__title {
         color: #353430;
-        font-weight: 700;
     }
     
     .card__text {
         color: #353430;
-        font-weight: 400;
     }
     
     .advice-item__title {
@@ -110,18 +100,68 @@
     
     .advice-item__text {
         color: #353430;
-        font-weight: 400;
+    }
+    
+    .title-decor {
+        background-color: #ff8dcb;
+        color: #353430;
     }
     
     a {
-        text-shadow: 2px 2px 0 var(--accent-color);
+        text-shadow: 2px 2px 0 #ff8dcb;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #000028;
+        --bg-image: url(../images/cover-image-dark.png);
+        --text-color: #f1b2ce;
+        --title-color: #db00ff;
+        --accent-color: #ff0070;
+        --button-hover: rgba(255, 0, 112, 0.4);
+        --section-title-color: #ff0070;
     }
     
-    a:hover {
-        border-bottom: 1px solid #353430;
+    .header__rec {
+        display: block;
     }
     
-    a:focus-visible {
-        outline: 1px solid #353430;
+    .header__theme-menu-button {
+        color: #ff0070;
+    }
+    
+    .header__theme-menu-button_active {
+        border: 1px solid #ff0070;
+        color: #ff0070;
+    }
+    
+    .section__title {
+        color: #ff0070;
+    }
+    
+    .card__title {
+        color: #f1b2ce;
+    }
+    
+    .card__text {
+        color: #f1b2ce;
+    }
+    
+    .advice-item__title {
+        color: #f1b2ce;
+    }
+    
+    .advice-item__text {
+        color: #f1b2ce;
+    }
+    
+    .title-decor {
+        background-color: #ff0070;
+        color: #000028;
+    }
+    
+    a {
+        text-shadow: 2px 2px 0 #ff0070;
     }
 }
