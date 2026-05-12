@@ -66,6 +66,7 @@
     justify-self: end;
     align-self: start;
     margin-block-start: 65px;
+    margin-right: 10px;
 }
 
 .header__theme-menu-list {
@@ -107,6 +108,7 @@
     letter-spacing: normal;
     color: var(--title-color);
     text-shadow: 4px 4px 0 var(--accent-color);
+    margin-left: 10px;
 }
 
 .header__description {
