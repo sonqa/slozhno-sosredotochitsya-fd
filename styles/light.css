@@ -22,7 +22,12 @@
 }
 
 :root.theme-light .header__theme-menu-button:hover {
-    border: 1px solid rgba(53, 52, 48, 0.4);
+    border: 1px solid #32312D66;
+}
+
+:root.theme-light .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: 1px solid #353430;
 }
 
 :root.theme-light .section__title {
@@ -54,12 +59,8 @@
     text-shadow: 2px 2px 0 #ff8dcb;
 }
 
-:root.theme-light a:hover {
-    border-bottom: 1px solid #353430;
-}
-
 @media (prefers-color-scheme: light) {
-    :root {
+    html:not(.theme-dark) {
         --bg-color: #fff1f7;
         --bg-image: url(../images/cover-image-light.png);
         --text-color: #353430;
@@ -69,46 +70,64 @@
         --section-title-color: #353430;
     }
     
-    .header__rec {
+    html:not(.theme-dark) .header__rec {
         display: none;
     }
     
-    .header__theme-menu-button {
+    html:not(.theme-dark) .header__theme-menu-button {
         color: #353430;
     }
     
-    .header__theme-menu-button_active {
+    html:not(.theme-dark) .header__theme-menu-button_active {
         border: 1px solid #353430;
         color: #353430;
     }
     
-    .section__title {
+    /* ← ДОБАВИТЬ ЭТОТ БЛОК */
+    html:not(.theme-dark) .header__theme-menu-button:hover {
+        border: 1px solid #32312D66;
+    }
+    
+    html:not(.theme-dark) .header__theme-menu-button:focus-visible {
+        outline: none;
+        border-bottom: 1px solid #353430;
+    }
+    
+    html:not(.theme-dark) .section__title {
         color: #353430;
     }
     
-    .card__title {
+    html:not(.theme-dark) .card__title {
         color: #353430;
     }
     
-    .card__text {
+    html:not(.theme-dark) .card__text {
         color: #353430;
     }
     
-    .advice-item__title {
+    html:not(.theme-dark) .advice-item__title {
         color: #353430;
     }
     
-    .advice-item__text {
+    html:not(.theme-dark) .advice-item__text {
         color: #353430;
     }
     
-    .title-decor {
+    html:not(.theme-dark) .title-decor {
         background-color: #ff8dcb;
         color: #353430;
     }
     
-    a {
+    html:not(.theme-dark) a {
         text-shadow: 2px 2px 0 #ff8dcb;
+    }
+    
+    html:not(.theme-dark) .decorated-zone::before,
+    html:not(.theme-dark) .decorated-zone::after {
+        border-inline-end-color: #353430;
+        border-block-start-color: #353430;
+        border-inline-start-color: #353430;
+        border-block-end-color: #353430;
     }
 }
 
@@ -164,4 +183,14 @@
     a {
         text-shadow: 2px 2px 0 #ff0070;
     }
+
+    
+}
+
+:root.theme-light .decorated-zone::before,
+:root.theme-light .decorated-zone::after {
+    border-inline-end-color: #353430;
+    border-block-start-color: #353430;
+    border-inline-start-color: #353430;
+    border-block-end-color: #353430;
 }

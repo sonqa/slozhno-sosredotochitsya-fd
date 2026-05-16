@@ -12,6 +12,11 @@
     display: block;
 }
 
+:root.theme-dark .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: 1px solid #ff0070;
+}
+
 :root.theme-dark .card__title {
     color: #000028;
 }
@@ -26,4 +31,12 @@
 
 :root.theme-dark .title-decor {
     color: #000028;
+}
+
+:root.theme-dark .decorated-zone::before,
+:root.theme-dark .decorated-zone::after {
+    border-inline-end-color: #ff0070 !important;
+    border-block-start-color: #ff0070 !important;
+    border-inline-start-color: #ff0070 !important;
+    border-block-end-color: #ff0070 !important;
 }
