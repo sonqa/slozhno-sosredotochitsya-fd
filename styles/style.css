@@ -1,10 +1,12 @@
 .page {
-    background-color: var(--bg-color);  
-    background-image: var(--bg-image);  
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .header {
@@ -137,7 +139,6 @@
     margin-block: 40px;
 }
 
-/* ОБЩИЙ КЛАСС ДЛЯ ВСЕХ СЕКЦИЙ С КАРТОЧКАМИ */
 .content-section {
     display: flex;
     flex-direction: column;
@@ -192,7 +193,6 @@
     margin-block-end: 10px;
 }
 
-/* Уникальные стили для второй секции */
 .section--what-reduces .section__title {
     width: 355px;
     height: 47px;
@@ -379,10 +379,10 @@
     }
 
     .header__description {
-    width: 364px;
-    justify-self: end;
-    margin-block-end: 0;
-    margin-right: 20px;
+        width: 364px;
+        justify-self: end;
+        margin-block-end: 0;
+        margin-right: 20px;
     }
 
     .main {
@@ -449,16 +449,6 @@
     .footer__title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
-
-    .decorated-zone::before {
-    inset-inline-end: 10px;
-    inset-block-start: 10px;
-    }
-
-    .decorated-zone::after {
-    inset-inline-start: 10px;
-    inset-block-end: 10px;
-    }
 }
 
 @media (min-width: 1024px) {
@@ -468,10 +458,12 @@
     }
 
     .section {
+        margin-left: 20px;
         margin-right: 20px;
     }
 
     .gallery {
+        margin-left: 20px;
         margin-right: 20px;
     }
 
@@ -509,17 +501,13 @@
 
     .section--what-reduces .section__title {
         max-width: 315px;
-        width: 100%;
+        margin-bottom: 0;
     }
 
     .section--what-reduces {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        max-width: 984px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .section--what-reduces .section__content {
@@ -530,16 +518,6 @@
 
     .gallery__grid {
         gap: 20px;
-    }
-
-    .decorated-zone::before {
-    inset-inline-end: 10px;
-    inset-block-start: 10px;
-    }
-
-    .decorated-zone::after {
-    inset-inline-start: 10px;
-    inset-block-end: 10px;
     }
 }
 
