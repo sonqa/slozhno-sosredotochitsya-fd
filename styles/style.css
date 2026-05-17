@@ -79,9 +79,9 @@
 .header__theme-menu-button {
     color: var(--accent-color);
     font-size: 18px;
-    line-height: 1;
+    line-height: 26px;
     text-transform: lowercase;
-    padding: 1.5px 13px;
+    padding: 0 13px;
     background: transparent;
     border: 1px solid transparent;
     cursor: pointer;
@@ -195,7 +195,6 @@
 
 .section--what-reduces .section__title {
     width: 355px;
-    height: 47px;
 }
 
 .section--what-reduces .section__content {
@@ -457,8 +456,14 @@
     }
 
     .section {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card__text,
+    .advice-item__text {
+        max-width: 649px;
+        width: 100%;
     }
 
     .gallery {
