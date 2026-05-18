@@ -79,9 +79,9 @@
 .header__theme-menu-button {
     color: var(--accent-color);
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1;
     text-transform: lowercase;
-    padding: 0 13px;
+    padding: 1.5px 13px;
     background: transparent;
     border: 1px solid transparent;
     cursor: pointer;
@@ -89,6 +89,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 26px;
 }
 
 .header__theme-menu-button_active {
@@ -456,14 +457,8 @@
     }
 
     .section {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .card__text,
-    .advice-item__text {
-        max-width: 649px;
-        width: 100%;
+        margin-left: 19.93px;
+        margin-right: 12.1px;
     }
 
     .gallery {
@@ -477,7 +472,7 @@
     }
 
     .header__description {
-        width: 491px; 
+        width: 491px;
         margin-right: 20px;
     }
 
